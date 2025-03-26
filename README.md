@@ -1,6 +1,6 @@
 # dataScience-Lec8-26-MAR-25
 Missing DATA- presentation 21- page 19
-* filling data or delete data
+* filling data or filter (delete) data
 * **number of columns=number of nan+number of available**
 * parm=np.nan= like in python none
   * correct: print(parm is np.nan)#true
@@ -15,9 +15,10 @@ Missing DATA- presentation 21- page 19
       * value is np.Nan #not always works
       * pd.isna(value)
       * nan of pd is not always the same as the np.nan 
-### delete data
+
 * notna()~isna()= return all **not** null 
   * df[~df[pre_movie_score].isnull()]=df[df[pre_movie_score].notna()]
+### filter (delete) data
 * dropna(thresh=number,axis,subset)- will remove all rows contain Nan.
   * thresh= optional parameter - at least **number** of nan in the *row*, the row will stay, including
     * will focus on the given group= row
