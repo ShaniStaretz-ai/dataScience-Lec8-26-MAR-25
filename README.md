@@ -40,5 +40,5 @@ Missing DATA- presentation 21- page 19
 * idxmax()= function that return the index(series index/dataframe index) where the max value appeared:
   * s.value_counts()=[{date:4},....]
     * s.value_counts().idxmax()=date
-      * s[s==s.value_counts().idmax()]=  return every value is idmax()
+      * s[s==s.value_counts().idxmax()]=  return every value is idxmax()
   
