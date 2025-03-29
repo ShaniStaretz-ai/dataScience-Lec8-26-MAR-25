@@ -26,6 +26,8 @@ Missing DATA- presentation 21- page 19
     * will focus on the given group= row
     * number can be result of calculation
     * if want 1 of available value= thresh=len(df.columns)-1)
+    * eliminate any row with Nan across all columns:df.dropna(thresh=1,subset=df.columns))
+    * Eliminate all rows that have NaN at least 1 NaN value in the [A , C ] columns only: df.dropna(subset=['A','C']))
   * dropna(axis=1)= will drop all columns with nan
     * dropna(thresh=4,axis=1)- will keep where 4 or more are available values **in the column**
     * dropna(subset=['age','sex']) = optional to focus only on columns, if in these columns have nan, then drop the rows
