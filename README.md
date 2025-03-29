@@ -25,7 +25,7 @@ Missing DATA- presentation 21- page 19
   * thresh= optional parameter - at least **number** of nan in the *row*, the row will stay, including
     * will focus on the given group= row
     * number can be result of calculation
-    * if want 1 of available value= thresh=len(df.column)-1)
+    * if want 1 of available value= thresh=len(df.columns)-1)
   * dropna(axis=1)= will drop all columns with nan
     * dropna(thresh=4,axis=1)- will keep where 4 or more are available values **in the column**
     * dropna(subset=['age','sex']) = optional to focus only on columns, if in these columns have nan, then drop the rows
