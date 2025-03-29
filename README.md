@@ -36,8 +36,9 @@ Missing DATA- presentation 21- page 19
 ### filling (replace) data= replace the Nan with value, page 24
 * replace by possible logic needed (mean,avg,0)
 * fillna(number):
-  * number to replace all Nan will number,
+  * number to replace all Nan will number
   * fillna(df['pre_movie_score'].mean()): can be result from calculation
+  * Fill column 'B' only with mean value of column 'B' values only:df['B']=df['B'].fillna(df['B'].mean())
 ### extra:
 * idxmax()= function that return the index(series index/dataframe index) where the max value appeared:
   * s.value_counts()=[{date:4},....]
